@@ -291,6 +291,7 @@ namespace Raspberry.IO.GeneralPurpose
         {
             switch (processor)
             {
+                case Processor.Bcm2835:
                 case Processor.Bcm2708:
                     return Interop.BCM2835_GPIO_BASE;
 
